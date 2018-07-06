@@ -24,7 +24,7 @@ The second way of writing a regular expressions consists in two slashes so if yo
 
 ### Example: 
 
-```` let eighteenPlus = /eighteen\+/; ````
+``` let eighteenPlus = /eighteen\+/; ```
 
 ## Methods
 
@@ -32,23 +32,23 @@ The second way of writing a regular expressions consists in two slashes so if yo
 
 Shows if the string matches the pattern:
 
-```` /abc/.test("abcde") -> true
-/abc/.test("abxde") -> false ````
+``` /abc/.test("abcde") -> true
+/abc/.test("abxde") -> false ```
 
 ### Matching any character
 
 In a regular expression, putting a set of characters between [] makes that part of the expression match any of the characters between the brackets.
 
-```` console.log(/[0123456789]/.test("in 1992"));
+``` console.log(/[0123456789]/.test("in 1992"));
 // → true
 console.log(/[0-9]/.test("in 1992"));
-// → true ````
+// → true ```
 
-Note: The ````-```` between the numbers indicate a range. 
+Note: The ```-``` between the numbers indicate a range. 
 
 There are also some shortcuts for common groups:
 
-````
+```
 \d	Any digit character
 \w	An alphanumeric character (“word character”)
 \s	Any whitespace character (space, tab, newline, and similar)
@@ -56,56 +56,56 @@ There are also some shortcuts for common groups:
 \W	A nonalphanumeric character
 \S	A nonwhitespace character
 .	Any character except for newline
-````
+```
 
 ### Example of matching a date and time format: 
 
-````
+```
 let dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
 console.log(dateTime.test("01-30-2003 15:20"));
 // → true
 console.log(dateTime.test("30-jan-2003 15:20"));
 // → false
-````
+```
 
 To express taht you want to match any character except the one in the set, you add a caret ```^``` after the opening bracket. 
 
-````
+```
 let notBinary = /[^01]/;
 console.log(notBinary.test("1100100010100110"));
 // → false
 console.log(notBinary.test("1100100010200110"));
 // → true
-````
+```
 
 ## Repeating parts of a pattern
 
 ### +
 
-If you add a ````+```` after something in a regular expression, it indicates that element can be repeated more than once. I.e. /\d+/ matches one or more digit characters.
+If you add a ```+``` after something in a regular expression, it indicates that element can be repeated more than once. I.e. /\d+/ matches one or more digit characters.
 
 ### *
 
-The star ````*```` has a similar meaning but also allows the pattern to match zero times. Something with a star after it never prevents a pattern from matching— it’ll just match zero instances if it can’t find any suitable text to match.
+The star ```*``` has a similar meaning but also allows the pattern to match zero times. Something with a star after it never prevents a pattern from matching— it’ll just match zero instances if it can’t find any suitable text to match.
 
-```` console.log(/'\d+'/.test("'123'"));
+``` console.log(/'\d+'/.test("'123'"));
 // → true
 console.log(/'\d+'/.test("''"));
 // → false
 console.log(/'\d*'/.test("'123'"));
 // → true
 console.log(/'\d*'/.test("''"));
-// → true ````
+// → true ```
 
 ### ?
 
 A question mark makes a part of a pattern optional, meaning it may occur zero times or one time. In the following example, the u character is allowed to occur, but the pattern also matches when it is missing.
 
-```` let neighbor = /neighbou?r/;
+``` let neighbor = /neighbou?r/;
 console.log(neighbor.test("neighbour"));
 // → true
 console.log(neighbor.test("neighbor"));
-// → true ````
+// → true ```
 
 ### {}
 
@@ -113,11 +113,11 @@ To indicate that a pattern should occur a precise number of times, use braces. P
 You can also specify open-ended ranges when using braces by omitting the number after the comma. So, {5,} means five or more times.
 
 
-````
+```
 let dateTime = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{2}/;
 console.log(dateTime.test("1-30-2003 8:45"));
 // → true
-````
+```
 
 
 (Source: Eloquent Javascript)[https://eloquentjavascript.net/09_regexp.html]
