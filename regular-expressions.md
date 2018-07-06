@@ -24,7 +24,8 @@ The second way of writing a regular expressions consists in two slashes so if yo
 
 ### Example: 
 
-``` let eighteenPlus = /eighteen\+/; ```
+``` let eighteenPlus = /eighteen\+/;
+```
 
 ## Methods
 
@@ -33,7 +34,8 @@ The second way of writing a regular expressions consists in two slashes so if yo
 Shows if the string matches the pattern:
 
 ``` /abc/.test("abcde") -> true
-/abc/.test("abxde") -> false ```
+/abc/.test("abxde") -> false
+```
 
 ### Matching any character
 
@@ -42,9 +44,10 @@ In a regular expression, putting a set of characters between [] makes that part 
 ``` console.log(/[0123456789]/.test("in 1992"));
 // → true
 console.log(/[0-9]/.test("in 1992"));
-// → true ```
+// → true
+```
 
-Note: The ```-``` between the numbers indicate a range. 
+Note: The **-** between the numbers indicate a range. 
 
 There are also some shortcuts for common groups:
 
@@ -55,8 +58,8 @@ There are also some shortcuts for common groups:
 \D	A character that is not a digit
 \W	A nonalphanumeric character
 \S	A nonwhitespace character
-.	Any character except for newline
-```
+.	Any character except for newline ```
+
 
 ### Example of matching a date and time format: 
 
@@ -68,25 +71,24 @@ console.log(dateTime.test("30-jan-2003 15:20"));
 // → false
 ```
 
-To express taht you want to match any character except the one in the set, you add a caret ```^``` after the opening bracket. 
+To express that you want to match any character except the one in the set, you add a caret **^** after the opening bracket. 
 
 ```
 let notBinary = /[^01]/;
 console.log(notBinary.test("1100100010100110"));
 // → false
 console.log(notBinary.test("1100100010200110"));
-// → true
-```
+// → true ```
 
 ## Repeating parts of a pattern
 
 ### +
 
-If you add a ```+``` after something in a regular expression, it indicates that element can be repeated more than once. I.e. /\d+/ matches one or more digit characters.
+If you add a **+** after something in a regular expression, it indicates that element can be repeated more than once. I.e. /\d+/ matches one or more digit characters.
 
 ### *
 
-The star ```*``` has a similar meaning but also allows the pattern to match zero times. Something with a star after it never prevents a pattern from matching— it’ll just match zero instances if it can’t find any suitable text to match.
+The star * has a similar meaning but also allows the pattern to match zero times. Something with a star after it never prevents a pattern from matching— it’ll just match zero instances if it can’t find any suitable text to match.
 
 ``` console.log(/'\d+'/.test("'123'"));
 // → true
@@ -95,7 +97,8 @@ console.log(/'\d+'/.test("''"));
 console.log(/'\d*'/.test("'123'"));
 // → true
 console.log(/'\d*'/.test("''"));
-// → true ```
+// → true
+```
 
 ### ?
 
@@ -105,7 +108,8 @@ A question mark makes a part of a pattern optional, meaning it may occur zero ti
 console.log(neighbor.test("neighbour"));
 // → true
 console.log(neighbor.test("neighbor"));
-// → true ```
+// → true
+```
 
 ### {}
 
