@@ -24,7 +24,8 @@ The second way of writing a regular expressions consists in two slashes so if yo
 
 ### Example: 
 
-``` let eighteenPlus = /eighteen\+/;
+```
+let eighteenPlus = /eighteen\+/;
 ```
 
 ## Methods
@@ -63,8 +64,7 @@ There are also some shortcuts for common groups:
 
 ### Example of matching a date and time format: 
 
-```
-let dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+``` let dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
 console.log(dateTime.test("01-30-2003 15:20"));
 // → true
 console.log(dateTime.test("30-jan-2003 15:20"));
