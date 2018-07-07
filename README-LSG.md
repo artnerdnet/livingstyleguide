@@ -48,7 +48,105 @@ Include logo/demo screenshot.
 - PIMD uses the [StandardJS](https://standardjs.com) style.
 
 ## Testing
-- Explain how to run the automated tests for this system
+
+#### [Mocha](https://mochajs.org)
+Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on GitHub.
+
+To run Mocha’s tests, you will need GNU Make or compatible; Cygwin should work.
+
+````
+$ cd /path/to/mocha
+$ npm install
+$ npm test
+To use a different reporter:
+
+$ REPORTER=nyan npm test
+````
+
+##### Getting starting
+
+````
+$ npm install mocha
+$ mkdir test
+$ $EDITOR test/test.js # or open with your favorite editor
+````
+
+In your editor:
+
+````
+var assert = require('assert');
+describe('Array', function() {
+  describe('#indexOf()', function() {
+    it('should return -1 when the value is not present', function() {
+      assert.equal([1,2,3].indexOf(4), -1);
+    });
+  });
+});
+````
+
+Back in the terminal:
+
+````
+$ ./node_modules/mocha/bin/mocha
+
+  Array
+    #indexOf()
+      ✓ should return -1 when the value is not present
+
+
+  1 passing (9ms)
+  
+````
+
+Set up a test script in package.json:
+
+````
+"scripts": {
+    "test": "mocha"
+  }
+````
+
+Run tests with:
+
+````
+$ npm test
+````
+
+#### [Chai JS](http://www.chaijs.com)
+Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+Chai is available for both node.js and the browser using any test framework you like. There are also a number of other tools that include Chai.
+
+Node.js
+Package is available through npm:
+
+````
+npm install chai
+````
+
+Recommend adding it to package.json devDependencies using a * as the version tag. This will ensure that you always have the most recent version after running npm install, which can be especially powerful when paired with a continuous integration tool.
+
+````
+"devDependencies": {
+  "chai": "*",
+  "mocha": "*"
+}, "//": "mocha is our preference, but you can use any test runner you like"
+````
+
+Browser
+Include the chai browser build in your testing suite.
+
+````
+<script src="chai.js" type="text/javascript"></script>
+````
+
+This will provide chai as a global object, or define it if you are using AMD.
+
+The latest tagged version will be available for hot-linking at http://chaijs.com/chai.js. If you prefer to host yourself, use the chai.js file from the root of the github project. We recommend that you always use a version tag as your starting point, so the tag download list is the best place to start.
+
+Currently supports all modern browsers: IE 9+, Chrome 7+, FireFox 4+, Safari 5+. Please note that the should style is currently not compatible with IE9.
+
+If you want to know if your browser is compatible, run the online test suite.
+
 ### End-to-end-tests
 - Explain what these tests test and why
 ```
