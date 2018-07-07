@@ -44,8 +44,7 @@ Include logo/demo screenshot.
 - What is the build status of continuos integration?
 
 ##  Code style
-- Which code styles are used for this project?
-- PIMD uses the [StandardJS](https://standardjs.com) style.
+Living Style Guide uses the [StandardJS](https://standardjs.com) style and [Common Mark](http://commonmark.org) for markdown.
 
 ## Testing
 
