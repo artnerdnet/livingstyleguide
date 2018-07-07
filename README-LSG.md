@@ -41,7 +41,7 @@ Include logo/demo screenshot.
 
 
 ## Build status
-- What is the build status of continus integration?
+- What is the build status of continuos integration?
 
 ##  Code style
 - Which code styles are used for this project?
@@ -68,17 +68,32 @@ If people like your project they’ll want to learn how they can use it. To do s
 ## Code Dependencies 
 [Living Style Guide](http://www.livingstyleguide.org) is built with the dependencies listed below.
 
-### [JSDOM](https://github.com/jsdom/jsdom)
+
+#### [JSDOM](https://github.com/jsdom/jsdom)
 jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications. The latest versions of jsdom require Node.js v6 or newer. (Versions of jsdom below v10 still work with Node.js v4, but are unsupported.) As of v10, jsdom has a new API (documented below). The old API is still supported for now; see its documentation for details.
 
-### [MARKDOWN IT](https://github.com/markdown-it/markdown-it)
+
+#### [MARKDOWN IT](https://github.com/markdown-it/markdown-it)
 Markdown parser done right. Fast and easy to extend.
 
-### [LINKIFY](https://github.com/SoapBox/linkifyjs)
+
+#### [MDURL](https://github.com/markdown-it/mdurl)
+URL utilities for markdown-it parser.
+
+
+#### [LINKIFY](https://github.com/SoapBox/linkifyjs)
 Linkify is a small yet comprehensive JavaScript plugin for finding URLs in plain-text and converting them to HTML links. It works with all valid URLs and email addresses.
 
 
-### [ESLINT](https://github.com/eslint/eslint)
+#### [ENTITIES](https://github.com/fb55/entities)
+En- & decoder for XML/HTML entities.
+
+
+#### [ARGPARSE](https://github.com/nodeca/argparse)
+CLI arguments parser for node.js. Javascript port of python's argparse module (original version 3.2). That's a full port, except some very rare options, recorded in issue tracker.
+
+
+#### [ESLINT](https://github.com/eslint/eslint)
 ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions:
 
 * ESLint uses Espree for JavaScript parsing.
@@ -101,5 +116,5 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 This project is licensed under the MIT License. See [MIT-LICENSE](LICENSE.md) for details.
 
 ## Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspiration
+* [ArtNerdNet](http://www.github.com/artnerdnet)
+* [Diana Vilé](http://www.github.com/dianaviale)
