@@ -213,5 +213,7 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 This project is licensed under the MIT License. See [MIT-LICENSE](LICENSE.md) for details.
 
 ## Acknowledgments
+Copyright 2018++ Nico Hagenburger. See MIT-LICENSE for details. Get in touch with @hagenburger on Twitter or open an issue.
+
 * [ArtNerdNet](http://www.github.com/artnerdnet)
 * [Diana Vilé](http://www.github.com/dianaviale)
