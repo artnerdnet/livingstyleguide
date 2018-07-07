@@ -166,6 +166,13 @@ If people like your project they’ll want to learn how they can use it. To do s
 [Living Style Guide](http://www.livingstyleguide.org) is built with the dependencies listed below.
 
 
+#### [LERNA](https://github.com/lerna/lerna)
+Splitting up large codebases into separate independently versioned packages is extremely useful for code sharing. However, making changes across many repositories is messy and difficult to track, and testing across repositories gets complicated really fast.
+To solve these (and many other) problems, some projects will organize their codebases into multi-package repositories (sometimes called monorepos). Projects like Babel, React, Angular, Ember, Meteor, Jest, and many others develop all of their packages within a single repository.
+Lerna is a tool that optimizes the workflow around managing multi-package repositories with git and npm.
+Lerna can also reduce the time and space requirements for numerous copies of packages in development and build environments - normally a downside of dividing a project into many separate NPM package. See the hoist documentation for details.
+
+
 #### [JSDOM](https://github.com/jsdom/jsdom)
 jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications. The latest versions of jsdom require Node.js v6 or newer. (Versions of jsdom below v10 still work with Node.js v4, but are unsupported.) As of v10, jsdom has a new API (documented below). The old API is still supported for now; see its documentation for details.
 
