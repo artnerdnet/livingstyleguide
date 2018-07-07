@@ -66,11 +66,29 @@ How to use?
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
 ## Code Dependencies 
-This ... is __built with__ the following dependencies (tech/frameworks): 
+(Living Style Guide)[http://www.livingstyleguide.org] is built with the dependencies listed below.
 
-* []() - 
-* []() -
-* []() - 
+### JSDOM
+(GO TO REPO)[https://github.com/jsdom/jsdom]
+jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications. The latest versions of jsdom require Node.js v6 or newer. (Versions of jsdom below v10 still work with Node.js v4, but are unsupported.) As of v10, jsdom has a new API (documented below). The old API is still supported for now; see its documentation for details.
+
+### ESLINT
+(GO TO REPO)[https://github.com/eslint/eslint]
+ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions:
+
+* ESLint uses Espree for JavaScript parsing.
+* ESLint uses an AST to evaluate patterns in code.
+* ESLint is completely pluggable, every single rule is a plugin and you can add more at runtime.
+
+### LINKIFY
+(GO TO REPO)[https://github.com/SoapBox/linkifyjs]
+Linkify is a small yet comprehensive JavaScript plugin for finding URLs in plain-text and converting them to HTML links. It works with all valid URLs and email addresses.
+
+### MARKDOWN IT
+(GO TO REPO)[https://github.com/markdown-it/markdown-it]
+Markdown parser done right. Fast and easy to extend.
+
+
 
 ## Contributing
 Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
